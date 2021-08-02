@@ -1,0 +1,39 @@
+.container{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 360px;
+}
+
+.logo{
+    width: auto;
+    height: auto;
+}
+
+.icon{
+    width:40px;
+    height: 40px;
+}
+
+.pokesprite{
+    text-align: center;
+    width: 300px;
+    height: auto;
+}
+
+.pokesprite img{
+    text-align: center;
+    width: 120px;
+    height: auto;
+}
+
+.catch{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.catch img{
+    width: 550px;
+    height: auto;
+}

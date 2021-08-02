@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="catch">
+    <H1>Pikachu, chooses you to find the next pocket monster!</h1><br />
+    <H1 style="font-style:italic">ピカチュウ、次のポケットモンスターを見つけるためにあなたを選びます！</h1><br />
+    <H2>Which pocket monster would you like to find?</H2><br />
+    <H2 style="font-style:italic">どのポケットモンスターを見つけたいですか？</H2><br /><br />
+    <!--<img src="{{url_for('static',filename='catch.png')}}" class="catch">-->
+    
+    <div class="container-fluid">
+        <div class="d-grid ">
+            <div class="p-3 mb-2 bg-white border rounded">
+
+                <form class="d-flex" action="/pokemon" method="POST">
+                <a class="navbar-brand"><img src="{{url_for('static',filename='pikayou.webp')}}" style="max-width: 75px; max-height: 75px" class="icon"></a>
+                <input name="pokemon" class="form-control me-2" id="pokemon" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-warning" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </div>  
+
+</div>
+
+
+{% endblock %}
